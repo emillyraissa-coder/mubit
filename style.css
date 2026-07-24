@@ -1,0 +1,82 @@
+body {
+    left: 10%;
+    top: 15%;
+    justify-content: center;
+    background-color: #c9b0b9;
+    margin: 0%;
+}
+
+.primeiro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #F8C7D6;
+    height: 70px;
+    padding: 20px 35px;
+    position: relative;
+    color: rgb(151, 10, 52);
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.primeiro::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 10;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10" preserveAspectRatio="none"><path d="M 0,0 C 5,10 15,10 20,0 Z" fill="%23F8C7D6"/></svg>');
+    background-size: 20px 15px;
+    background-repeat: repeat-x;
+}
+
+.segundo {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.terceiro {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nome {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+.banner {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.banner2 {
+    background-color: #fffdf8;
+    background-image:
+    linear-gradient(#d7d1ff 1px, transparent 1px),
+    linear-gradient(90deg, #d7d1ff 1px, transparent 1px);
+    background-size: 20px 20px;
+    height: 380px;
+    margin-top: 1px;
+}
