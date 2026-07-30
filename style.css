@@ -6,7 +6,7 @@ body {
     margin: 0%;
 }
 
-.primeiro {
+.cabeçalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,12 +16,12 @@ body {
     height: 70px;
     padding: 20px 35px;
     position: relative;
-    color: rgb(151, 10, 52);
     margin-top: 0;
     font-family: 'Times New Roman', Times, serif;
+
 }
 
-.primeiro::after {
+.cabeçalho::after {
     content: "";
     display: block;
     width: 100%;
@@ -34,22 +34,23 @@ body {
     background-size: 20px 15px;
     background-repeat: repeat-x;
 }
-
-.segundo {
+.menu-esquerdo,
+.menu-direito{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    text-decoration: none;
+    list-style: none;
 }
-
-.terceiro {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+.menu-direito a,
+.menu-esquerdo a{
+    text-decoration: none;
+    color: rgb(151, 10, 52);
 }
-
 .nome {
     font-size: 35px;
     font-weight: bold;
+    color: rgb(151, 10, 52);
 }
 
 img {
