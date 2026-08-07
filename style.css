@@ -52,24 +52,148 @@
 /* tentando fazer a versão mobile */
 
 
-img {
-    position: relative;
-    width: 100%;
-    height: 540px;
-    object-fit: cover;
-    scroll-snap-align: center;
-    flex-shrink: 0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.banner {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    width: 100%;
-    height: 60px;
-    padding: 15px;
-    margin: 15px;
+body{
+    font-family:Georgia, serif;
+    background:#eee;
 }
+
+.banner{
+    width:100%;
+    height:550px;
+    background:#7b0f22;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.conteudo{
+    width:700px;
+    text-align:center;
+    color:white;
+}
+
+.topo{
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:55px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.texto{
+    width:500px;
+    margin:auto;
+    font-size:15px;
+    line-height:1.6;
+    color:#f1dcdc;
+}
+
+.cards{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+}
+
+.card{
+    width:120px;
+    height:130px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:25px;
+}
+
+.card h2{
+    font-size:38px;
+    color: #0f7b1d;
+}
+
+.card p{
+    font-size:14px;
+    color: #0f7b1d;
+}
+
+.laranja{
+    background:#f4a16e;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.azul{
+    background:#c7d4ff;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.rosa{
+    background-color:#f6a4c7;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.mais{
+    color:rgb(238, 232, 232);
+    font-size:40px;
+}
+.foto{
+    position:absolute;
+    width:150px;
+    border:4px solid white;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.foto1{
+    top:240px;
+    left:60px;
+    transform:rotate(-15deg);
+}
+.direita1{
+    top: 60px;
+    right: 60px;
+    transform: rotate(-15deg);
+}
+.foto2{
+    top:60px;
+    left:60px;
+    transform:rotate(15deg);
+}
+.direita2{
+    top: 240px;
+    right:60px;
+    transform: rotate(15deg);
+}
+.foto3{
+    bottom:40px;
+    left:60px;
+    transform:rotate(15deg);
+}
+.direita3{
+    bottom: 40px;
+    right: 50px;
+    transform: rotate(-15deg);
+}
+
+
+
+
 
 .banner2 {
     background-color: #fffdf8;
